@@ -10,7 +10,8 @@ The code is the basis for a Fairy Tale blog post based on Baba Yaga
 
 * Download and install [leiningen](https://github.com/technomancy/leiningen)
 * Clone project.
-* You must have Clojure 1.5.0 - [follow these instructions if needed](http://gigasquidsoftware.com/wordpress/?p=403)
+* lein deps
+
 
 
 
