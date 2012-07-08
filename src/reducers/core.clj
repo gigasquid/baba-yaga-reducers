@@ -30,5 +30,9 @@
 
 (into [] (r/filter even? (r/map hashcode odyssey-text))) ;=> [80 114 ... ]
 
+(dotimes [n 5]
+  (println (str "r/map - r/filter - r/fold - ( run " n " ):"))
+  (time (r/fold + (r/filter even? (r/map hashcode odyssey-text)))))
+
 
 
