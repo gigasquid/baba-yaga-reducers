@@ -4,8 +4,10 @@
 (map + [1 2 3]) ;=> (1 2 3)
 (class(map + [1 2 3]))    ;=> (1 2 3)
 
-(def odyssey-text (slurp "odyssey.txt"))
-(class odyssey-text) ;=> java.lang.String
+;need a vector to be able to chunk and get size for parallel fold
+(def odyssey-text (vec (slurp "odyssey.txt")))
+(class odyssey-text) ;=> java.lang.PersistentVector
+
 
 (first odyssey-text) ;=> \P
 (class (first odyssey-text)) ;=> java.lang.Character
